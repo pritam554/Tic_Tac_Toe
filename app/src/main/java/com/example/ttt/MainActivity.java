@@ -39,18 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
     }
-    
-    
-    @Override
-    public void onClick(View v) {
-        if (!((Button) v).getText().toString().equals("")) {
-            return;
-        }
-        if (player1Turn) {
-            ((Button) v).setText("X");
-        } else {
-            ((Button) v).setText("O");
-        }
         roundCount++;
         if (checkForWin()) {
             if (player1Turn) {
