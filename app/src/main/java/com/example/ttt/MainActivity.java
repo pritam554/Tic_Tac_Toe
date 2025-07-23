@@ -52,13 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             player1Turn = !player1Turn;
         }
     }
-    private boolean checkForWin() {
-        String[][] field = new String[3][3];
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                field[i][j] = buttons[i][j].getText().toString();
-            }
-        }
+
         for (int i = 0; i < 3; i++) {
             if (field[i][0].equals(field[i][1])
                     && field[i][0].equals(field[i][2])
